@@ -5,8 +5,13 @@
   "main": "server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd client/ && yarn install && yarn build && cd ../server && yarn install && yarn start"
-  },
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "server": "nodemon server/index.js",
+    "develop": "npm run server",
+    "start": "npm run server"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nightsailor/online-school.git"
