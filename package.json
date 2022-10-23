@@ -1,0 +1,20 @@
+{
+  "name": "online-school",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd client/ && yarn install && yarn build && cd ../server && yarn install && yarn start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nightsailor/online-school.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nightsailor/online-school/issues"
+  },
+  "homepage": "https://github.com/nightsailor/online-school#readme"
+}
